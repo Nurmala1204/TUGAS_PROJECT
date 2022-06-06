@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<body>
+<h1 align="center">Welcome to STT-NF</h1>
+</hr>
+<center>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'aboutus' %}">About Us</a>
+    <a href="{% url 'gallery' %}">Gallery</a>
+</center>
+</hr>
+<h3 align="center">Gallery STT-NF</h3>
+<marquee direction="up" scrolldelay="100">
+{% load static %}
+<img scr="{% static 'images/1.jpg' %}" /> <br/><br/>
+<img scr="{% static 'images/2.jpg' %}" /> <br/><br/>
+<img scr="{% static 'images/3.jpg' %}" /> <br/><br/>
+</marquee>
+</body>
+</html>
